@@ -1,145 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>신유정 포트폴리오</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Arial', sans-serif; line-height: 1.6; background-color: #f4f4f4; color: #333; }
-
-    header {
-      background-color: #333;
-      color: #fff;
-      padding: 20px 0;
-      text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-    }
-
-    nav {
-      margin-top: 10px;
-    }
-
-    nav a {
-      color: #fff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    #about {
-      background-color: #fff;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      padding: 30px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    #about h2, #projects h2, #contact h2 {
-      margin-bottom: 20px;
-      color: #222;
-    }
-
-    .skills span {
-      display: inline-block;
-      background-color: #e0e0e0;
-      margin: 5px;
-      padding: 8px 12px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-
-    #projects .project {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-
-    .project h3 {
-      margin-bottom: 10px;
-    }
-
-    .project p {
-      font-size: 0.95rem;
-    }
-
-    #contact a {
-      display: block;
-      margin: 8px 0;
-      color: #0077cc;
-      text-decoration: none;
-    }
-
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 0.9em;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개발자 포트폴리오</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
   <header>
-    <h1>신유정 포트폴리오</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+    <img src="433652a4-4b27-4d85-95e7-765454777099.png" alt="Profile Image" class="profile-img" />
+    <nav class="top-right">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
     </nav>
   </header>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>안녕하세요! 저는 웹 개발에 열정을 가진 신유정입니다.<br>
-    프론트엔드와 백엔드를 모두 경험하며 사용자 친화적인 웹을 만드는 것에 관심이 많습니다.</p>
-    <h3>기술 스택</h3>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Python</span>
-      <span>MySQL</span>
-    </div>
+    <p>안녕하세요. 저는 웹 개발을 좋아하는 개발자입니다.</p>
   </section>
 
   <section id="projects">
     <h2>Projects</h2>
+    <p>진행한 주요 프로젝트들을 소개합니다.</p>
+  </section>
 
-    <div class="project">
-      <h3>🎨 포트폴리오 홈페이지</h3>
-      <p>HTML과 CSS만으로 만든 개인용 소개 웹사이트입니다.</p>
-    </div>
+  <section id="skills">
+    <h2>Skills</h2>
+    <p>HTML, CSS, JavaScript, Python, React 등</p>
+  </section>
 
-    <div class="project">
-      <h3>📝 블로그 시스템</h3>
-      <p>회원 가입, 게시판, 댓글 기능이 있는 데이터베이스 기반 블로그 프로젝트입니다.</p>
-    </div>
-
+  <section id="resume">
+    <h2>Resume</h2>
+    <a href="#">PDF 다운로드</a>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>문의 또는 협업 제안은 아래 이메일로 연락주세요!</p>
-    <a href="andy6986@naver.com">📧 yourmail@example.com</a>
-    <a href="https://github.com/yourgithub" target="_blank">🐱 GitHub</a>
+    <p>Email: your.email@example.com</p>
   </section>
 
-  <footer>
-    &copy; 2025 신유정. All Rights Reserved.
-  </footer>
-
+  <section id="links">
+    <h2>Other Links</h2>
+    <ul>
+      <li><a href="https://github.com">GitHub</a></li>
+      <li><a href="https://velog.io">Velog</a></li>
+      <li><a href="https://linkedin.com">LinkedIn</a></li>
+    </ul>
+  </section>
 </body>
 </html>
