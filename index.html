@@ -1,58 +1,212 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>개발자 포트폴리오</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>신유정 포트폴리오</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      padding: 10px 20px;
+      text-align: right;
+    }
+
+    header nav a {
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1080px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .section-title {
+      font-size: 1.5em;
+      margin: 50px 0 10px;
+    }
+
+    .top-section {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 40px;
+      align-items: flex-start;
+    }
+
+    .photo img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 100px;
+      border: 2px solid #aaa;
+    }
+
+    .intro-wrap, .education-wrap, .cert-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .intro, .education, .certificates {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    .personal-info {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .personal-info th, .personal-info td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: left;
+    }
+
+    .personal-info th {
+      font-weight: bold;
+      width: 80px;
+    }
+
+    .info-columns {
+      display: flex;
+      gap: 20px;
+      flex: 2;
+    }
+
+    .box-pair {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .project-section, .certificates {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      flex: 1;
+    }
+
+    .contact {
+      display: flex;
+      gap: 10px;
+      justify-content: start;
+      margin-bottom: 30px;
+    }
+
+    .github-icon {
+      width: 32px;
+      height: 32px;
+    }
+
+    .skills {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
+
+    .skills a {
+      text-decoration: none;
+      margin: 0 10px;
+      color: #007acc;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <img src="433652a4-4b27-4d85-95e7-765454777099.png" alt="Profile Image" class="profile-img" />
-    <nav class="top-right">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#links">Links</a></li>
-      </ul>
+    <nav>
+      <a href="pages/about.html">자기소개</a>
+      <a href="pages/projects.html">프로젝트 소개</a>
+      <a href="pages/contact.html">Contact</a>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>안녕하세요. 저는 웹 개발을 좋아하는 개발자입니다.</p>
-  </section>
+  <div class="container">
+    
+    <section class="top-section">
+      <div class="photo">
+        <img src="사진.png" alt="프로필 사진">
+      </div>
+      <div class="info-columns">
+        <div class="intro-wrap">
+          <a href="pages/about.html">
+            <h2 class="section-title"> 개인정보</h2>
+          </a>
+          <div class="intro">
+            <table class="personal-info">
+              <tr><th>이름</th><td>신유정</td></tr>
+              <tr><th>이메일</th><td><a href="mailto:andy6986@naver.com">andy6986@naver.com</a></td></tr>
+              <tr><th>번호</th><td>010-4103-6986</td></tr>
+              <tr><th>주소</th><td>경기도 시흥시</td></tr>
+            </table>
+          </div>
+        </div>
+        <div class="education-wrap">
+          <h2 class="section-title"> 학력과 교육이력</h2>
+          <div class="education">
+            <div class="education-item">
+              <time>2021.03 ~ </time>
+              <strong>군산대학교 컴퓨터공학과 21학번</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <p>진행한 주요 프로젝트들을 소개합니다.</p>
-  </section>
+    <div class="box-pair">
+      <!-- 프로젝트 -->
+      <div class="intro-wrap">
+        <h2 class="section-title"> 프로젝트</h2>
+        <section class="project-section">
+          <h3>자유게시판 웹 개발</h3>
+          <p>HTML과 DB를 사용해서 자유게시판 웹 디자인 및 테이블 생성과 게시글 삽입, 수정, 삭제 기능 구현</p>
+        </section>
+      </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>HTML, CSS, JavaScript, Python, React 등</p>
-  </section>
+      <!-- 자격증 -->
+      <div class="cert-wrap">
+        <h2 class="section-title"> 자격증</h2>
+        <section class="certificates">
+          <ul style="padding-left: 20px;">
+            <li>정보처리기사</li>
+            <li>SQLD</li>
+            <li>웹개발 부트캠프 수료</li>
+          </ul>
+        </section>
+      </div>
+    </div>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="#">PDF 다운로드</a>
-  </section>
+    <h2 class="section-title"> GitHub</h2>
+    <section class="contact">
+      <a href="https://github.com/" target="_blank">
+        <img class="github-icon" src="https://cdn-icons-png.flaticon.com/24/25/25231.png" alt="GitHub">
+      </a>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your.email@example.com</p>
-  </section>
-
-  <section id="links">
-    <h2>Other Links</h2>
-    <ul>
-      <li><a href="https://github.com">GitHub</a></li>
-      <li><a href="https://velog.io">Velog</a></li>
-      <li><a href="https://linkedin.com">LinkedIn</a></li>
-    </ul>
-  </section>
+    <h2 class="section-title"> 기술 스택</h2>
+    <section class="skills">
+      <a href="https://developer.mozilla.org/ko/docs/Web/HTML">HTML</a>,
+      <a href="https://developer.mozilla.org/ko/docs/Web/CSS">CSS</a>,
+      <a href="https://www.mysql.com/">MySQL</a>
+    </section>
+  </div>
 </body>
 </html>
+
